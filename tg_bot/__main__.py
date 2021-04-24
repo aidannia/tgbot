@@ -145,7 +145,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN, reply_markup=[InlineKeyboardButton(text="🎉 Add me to your group", url="http://t.me/EminemHelpBot?startgroup=true")]
 
     else:
-        update.effective_message.reply_text("still alive...")
+        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
 
 
 # for test purposes
