@@ -142,9 +142,9 @@ def start(bot: Bot, update: Update, args: List[str]):
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
-                parse_mode=ParseMode.MARKDOWN, reply_markup=[[InlineKeyboardButton(text="🎉 Add me to your group", url="http://t.me/EminemHelpBot?startgroup=true")],
+                parse_mode=ParseMode.MARKDOWN, reply_markup=[InlineKeyboardButton(text="🎉 Add me to your group", url="http://t.me/EminemHelpBot?startgroup=true")],
                      [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/EvasSupport"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/EvasUpdates")],
-                     [InlineKeyboardButton(text="🛠 Help", url="https://t.me/EminemHelpBot?start=help")]]
+                     [InlineKeyboardButton(text="🛠 Help", url="https://t.me/EminemHelpBot?start=help")]
 
     else:
         update.effective_message.reply_text("still alive...")
