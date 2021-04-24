@@ -1,7 +1,7 @@
 {
-  "name": "Σνα",
+  "name": "Kochubot",
   "description": "Telegram's sassiest group manager. Modular Telegram group management bot!",
-  "logo": "https://telegra.ph/file/2b7aef6b3d417ad515b20.jpg",
+  "logo": "https://telegra.ph/file/1925c7a2f601539ccde7a.png",
   "keywords": [
     "telegram",
     "best",
@@ -12,7 +12,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/aidannia/tgbot",
+  "repository": "https://github.com/jithumon/tgbot",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable env variables. But, you need to understand the code to know what to set here!",
@@ -23,11 +23,11 @@
     },
     "OWNER_ID": {
       "description": "An integer of consisting of your owner ID",
-      "value": "1453690249"
+      "value": "20516707"
     },
     "OWNER_USERNAME": {
       "description": "Your username",
-      "value": "AidanNia"
+      "value": "SonOfLars"
     },
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode messages",
@@ -42,19 +42,19 @@
     },
     "SUDO_USERS": {
       "description": "A space separated list of user_ids which should be considered sudo users",
-      "value": "1453690249 1585306455 1686300704 1442966962"
+      "value": "254318997 18673980 83489514"
     },
     "SUPPORT_USERS": {
       "description": "A space separated list of user_ids which should be considered support users (can gban/ungban, nothing else)",
-      "value": "1453690249 1585306455 1686300704 1442966962"
+      "value": "254318997 18673980 83489514"
     },
     "WHITELIST_USERS": {
       "description": "A space separated list of user_ids which should be considered whitelisted - they can't be banned.",
-      "value": "1453690249 1585306455 1686300704 1442966962"
+      "value": "254318997 18673980 83489514"
     },
     "DONATION_LINK": {
       "description": "Optional: link where you would like to receive donations.",
-      "value": "https://www.paypal.me/AidanNia"
+      "value": "https://www.paypal.me/PaulSonOfLars"
     },
     "PORT": {
       "description": "Port to use for your webhooks",
@@ -82,4 +82,21 @@
       "value": "1",
       "required": false
     }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
+      }
+    }
+  ],
+  "stack": "heroku-20",
+  "buildpacks": [],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
   }
+}
